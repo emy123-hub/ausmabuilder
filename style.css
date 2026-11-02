@@ -237,6 +237,29 @@ p:last-child {
   letter-spacing: 0.05em;
 }
 
+/* Bild-Box für Kategorie-Karten mit echtem Bild */
+.category-img-container {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 150px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
 .category-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -660,7 +683,8 @@ p:last-child {
     padding: 1.5rem;
   }
 
-  .card-placeholder {
+  .card-placeholder,
+  .category-img-container {
     min-height: 170px;
   }
 
